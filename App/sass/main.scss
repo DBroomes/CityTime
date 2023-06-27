@@ -26,6 +26,15 @@ margin-left: 15px;
 
 }
 
+.main{
+    &__text{
+
+    max-width: 48%;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+}
 strong{
 
     font-weight: bold;;
@@ -37,9 +46,24 @@ height: 30px;
 display:inline-block;
 margin: 1px;
 background-color: rgb(185,205,213);
-
-
 font-size:  0.8em;
+}
+.form {
 
+    &__label {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.75em;
+        text-align: right;
+        vertical-align: middle;
+        background-color: #bdcad0;
+        color: #000033;
+        width: 120px;
+    }
+    &__space {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.75em;
+        background-color: #dbdbdb;
+        vertical-align: middle;
+    }
 
 }

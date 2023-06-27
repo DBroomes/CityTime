@@ -20,29 +20,97 @@
         </div>
 
         <div class="grid__main">
-            <br>
+            <div class="main">
 
-            <h1>Sign In</h1>
 
-            <div class="hline">
 
+                <div class="main__text">
+
+                    <br>
+
+                    <h1>Sign In</h1>
+
+                    <div class="hline"></div>
+
+                    <p>Welcome to CityTime! Please Enter your User Name and Password</p>
+                    <br>
+                    <p>
+                        <Strong>REMINDER:</Strong> Employees eligible to receive overtime compensation under the FLSA
+                        and/or
+                        collective bargaining agreements are only authorized to work during their regularly scheduled
+                        hours.
+                        Any
+                        work performed before or after their regularly scheduled hours must be approved in accordance
+                        with
+                        their
+                        agency's policy.
+                    </p>
+                    <br>
+                    <br>
+                </div>
+                <div class="main__form">
+
+
+
+                    <form method="post" action="/pkmslogin.form">
+                        <div id="form" class="form">
+                            <table border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr valign="top">
+                                        <td>
+                                            <table border="0" cellpadding="5" cellspacing="1" width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="form__label">User Name</td>
+                                                        <td class="form__space">
+                                                            <input name="username" tabindex="1">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="form__label">Password</td>
+                                                        <td class="form__space">
+                                                            <input name="password" onkeydown="password_onkeydown()"
+                                                                tabindex="2" type="password">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="form__label">Start Page</td>
+                                                        <td class="form__space">
+                                                            <select name="startPage" tabindex="3">
+                                                                <option value="homePage">Home Page</option>
+                                                                <option value="webClock">Web Clock</option>
+                                                                <option value="currentTimesheet">Current Timesheet
+                                                                </option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="buttons">
+                            <input onclick="submitAction()" value="Sign In" name="login" tabindex="4" type="button"
+                                id="loginButton">
+                            &nbsp;&nbsp;&nbsp;<a href="/ctcare/CTSelfCare/pages/main/task.do?mainLink=reset.password"
+                                style="font-family: Arial,Helvetica,sans-serif; font-size: 0.65em;" tabindex="4">Forgot
+                                Password</a>
+                        </div>
+                        <input name="login-form-type" value="pwd" type="hidden">
+                    </form>
+
+                </div>
             </div>
-            <p>Welcome to CityTime! Please Enter your User Name and Password</p>
-            <br>
-            <p>
-                <Strong>REMINDER:</Strong> Employees eligible to receive overtime compensation under the FLSA and/or
-                collective bargaining agreements are only authorized to work during their regularly scheduled hours. Any
-                work performed before or after their regularly scheduled hours must be approved in accordance with their
-                agency's policy.
-            </p>
-            <br>
-            <br>
+
 
 
 
         </div>
 
     </div>
+
 
 
 
